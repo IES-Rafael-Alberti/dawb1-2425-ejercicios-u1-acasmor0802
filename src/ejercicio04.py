@@ -1,3 +1,3 @@
 tempc = float(input('Ingrese temperatura en Celsius: '))
-tempf = tempc + 32
-print('Su temperatura en Fahrenheit es: {:.2f}', tempf)
+tempf = tempc*9/5 + 32
+print(f'Su temperatura en Fahrenheit es: {tempf}')
