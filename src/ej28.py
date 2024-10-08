@@ -9,12 +9,12 @@ def calculo(num1,num2):
         
 
 def calcular2(num1,num2):
-    num3 = len(range(num2 +1,num1))
+    num3 = len(range(num2,num1))
     print(num3)
 
 
 def calcular1(num1, num2):
-    num3 = len(range(num1 +1,num2))
+    num3 = len(range(num1,num2))
     print(num3)
 
 
