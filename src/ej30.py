@@ -11,7 +11,7 @@ def intermedio(inicio,incremento,total):
           total = total - 1
           list().append(inicio)
           inicio += incremento
-    print(list)
+        return list
 
 def comprobante(incremento,total):
     if(incremento == 0):
