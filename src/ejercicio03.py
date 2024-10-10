@@ -1,0 +1,16 @@
+ancho = 17
+alto = 12.0
+x1 = ancho / alto
+x2 = ancho // 2
+x3 = ancho / 2
+x4 = ancho * 2
+x5 = ancho * alto
+x6 = (5 + 1) * 3
+x7 = (5 + 1) / 3
+print('ancho / alto =', x1, 'y es de tipo',type(x1) )
+print('ancho // 2 =', x2, 'y es de tipo',type(x2) )
+print('ancho / 2 =', x3, 'y es de tipo',type(x3) )
+print('ancho * 2 =', x4, 'y es de tipo',type(x4) )
+print('ancho * alto =', x5, 'y es de tipo',type(x5) )
+print('(5 + 1) * 3 =', x6, 'y es de tipo',type(x6) )
+print('(5 + 1) / 3 =', x7, 'y es de tipo',type(x7) )

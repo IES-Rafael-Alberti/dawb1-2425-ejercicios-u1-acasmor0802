@@ -1,0 +1,2 @@
+print ("Introduzca tres números.")
+print (f"La suma de los tres números es: {round((float(input("Introduzca el primer número: ")))+(float(input("Introduzca el segundo número: ")))+(float(input("Introduzca el tercer númro: "))), 2)}.")
