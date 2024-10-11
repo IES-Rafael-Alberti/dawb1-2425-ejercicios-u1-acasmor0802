@@ -3,7 +3,7 @@ def main():
     incremento = int(input('Introduce un incremento: '))
     total = int(input('Introduce un total: '))
     comprobante(incremento,total)
-    print(pantalla(inicio,incremento,total))
+    print(f"SERIE => {pantalla(inicio,incremento,total)}")
 
 
 def pantalla(inicio,incremento,total):
