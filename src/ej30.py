@@ -3,15 +3,32 @@ def main():
     incremento = int(input('Introduce un incremento: '))
     total = int(input('Introduce un total: '))
     comprobante(incremento,total)
-    intermedio(inicio,incremento,total)
+    print(pantalla(inicio,incremento,total))
+
+
+def pantalla(inicio,incremento,total):
+    cadena = intermedio(inicio,incremento,total)
+    resultado = ""
+    for i, numero in enumerate(cadena):
+        if i == 0:
+            resultado += str(numero)
+        elif i == 1:
+            resultado += "-" + str(numero)
+        elif i == len(cadena) - 1:
+           resultado += "-" + str(numero)
+        else:
+            resultado += ".." + str(numero)
+    return resultado
 
 
 def intermedio(inicio,incremento,total):
-     while(total != 0):
-          total = total - 1
-          list().append(inicio)
-          inicio += incremento
-        return list
+    serie = []
+    while(total != 0):
+            total = total - 1
+            serie.append(inicio)
+            inicio += incremento
+    return serie
+
 
 def comprobante(incremento,total):
     if(incremento == 0):
