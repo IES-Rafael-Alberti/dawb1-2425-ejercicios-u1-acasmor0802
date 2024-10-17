@@ -1,6 +1,5 @@
 def texto(nombre):
-    if nombre == 'Pedro':
-        return f"Hola {nombre}."
+    return f"Hola {nombre}."
 
 
 def main():

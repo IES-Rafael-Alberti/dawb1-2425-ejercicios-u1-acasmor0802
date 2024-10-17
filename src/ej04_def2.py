@@ -4,6 +4,7 @@ def texto():
 
 def texto_entrada():
     farenheit = float(input("Introduce una temperatura en Farenheit: "))
+    farenheit = round(farenheit, 2)
     cad = grados_celsius(farenheit)
     return f"{cad}ºC({farenheit}ºF)"
 
