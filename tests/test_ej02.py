@@ -1,13 +1,13 @@
 import pytest
-from src.ej02_def import main, introducir, calculo
+from src.ej02_def import calculo
 
 
 @pytest.mark.parametrize(
-    "precio","hora","expected",
+    "precio, hora, expected",
     [
-        ("10","1" , "10")
-        ("10","3" , "30")
-        ("40","2" , "80")
+        (10, 1 , "El importe total es de 10."),
+        (10, 3 , "El importe total es de 30."),
+        (40, 2 , "El importe total es de 80."),
     ]
 )
 

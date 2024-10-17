@@ -1,5 +1,5 @@
-def calculo(precio, hora):
-    return print(f"El importe total es de {hora * precio}.")
+def calculo(precio: float, hora: float) -> str:
+    return f"El importe total es de {hora * precio}."
 
 
 def introducir(valor):
@@ -10,7 +10,7 @@ def main():
     precio = introducir("Introduce un coste: ")
     hora = introducir("introduce una cantidad de horas: ")
 
-    calculo(hora, precio)
+    print(calculo(hora, precio))
 
 if __name__ == "__main__":
     main()

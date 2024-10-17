@@ -1,15 +1,15 @@
 import pytest
-from src.ej01_def import main,texto
+from src.ej01_def import texto
 
 
 @pytest.mark.parametrize(
-    "nombre","expected",
+    "nombre, expected",
     [
-        ("Pedro","Hola Pedro")
-        ("Nariz","Hola Nariz")
-        ("L", "Hola L")
+        ("Pedro","Hola Pedro"),
+        ("Nariz","Hola Nariz"),
+        ("L", "Hola L"),
     ]
 )
 
-def test_hola(nombre, expected):
-    assert main(nombre) == expected
+def test_texto(nombre, expected):
+    assert texto(nombre) == expected
